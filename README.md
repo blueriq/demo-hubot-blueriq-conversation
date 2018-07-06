@@ -29,5 +29,5 @@ SET HUBOT_BLUERIQ_PASSWORD=welcome
 1. Say `hi`. Reply: `Hello, how can I help you?`
 2. Say `@<botname> <question>`. Reply: `Let me check my questionnaire database...`. The chat with Blueriq starts.
 
-[logo]: https://www.blueriq.com/wp-content/themes/blueriq_src/assets/images/blueriq_logo.png
+[logo]: https://www.blueriq.com/wp-content/uploads/2018/07/BLUERIQ-rgb-logo-kleur-gradient-PNG-300x111.png
 [website]: http://www.blueriq.com
