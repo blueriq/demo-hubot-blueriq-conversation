@@ -25,12 +25,12 @@ SET HUBOT_BLUERIQ_PASSWORD=welcome
 SET HUBOT_BLUERIQ_SHORTCUT=coffee
 ```
 
-# Start chatting
+# Set up Blueriq Runtime
 
 Chat with your Blueriq server using the Decision Tree API (available since Blueriq 11.2).
 
 In Blueriq Studio 11.2 or higher we have provided an example package called `CoffeeAdvisor.package`.
-After importing this in your project, please create a shortcut as shown below.
+After importing this in your project, please create a shortcut in the `application.properties`:
 
 ```
 blueriq.shortcut.coffee.project=studio-Demo-CoffeeAdvisor
@@ -51,6 +51,8 @@ In the example above, please add `users.properties` in the `spring.config.additi
 ```
 admin={noop}welcome
 ```
+
+# Start chatting
 
 1. Say `hi`. Reply: `Hello, how can I help you?`
 2. Say `@<botname> What kind of coffee do I need?`. Reply: `Let me check my questionnaire database...`. The chat with Blueriq starts.
