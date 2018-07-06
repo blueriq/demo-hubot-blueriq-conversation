@@ -22,6 +22,7 @@ Please set the following variables and (re)start Hubot.
 SET HUBOT_BLUERIQ_RUNTIME_URL=http://localhost:8080/Runtime/
 SET HUBOT_BLUERIQ_USERNAME=admin
 SET HUBOT_BLUERIQ_PASSWORD=welcome
+SET HUBOT_BLUERIQ_SHORTCUT=coffee
 ```
 
 # Start chatting

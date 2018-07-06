@@ -5,6 +5,7 @@
 #   HUBOT_BLUERIQ_RUNTIME_URL
 #   HUBOT_BLUERIQ_USERNAME
 #   HUBOT_BLUERIQ_PASSWORD
+#	HUBOT_BLUERIQ_SHORTCUT
 #
 # Dependencies:
 #   "moment": "^2.10.3"
@@ -71,8 +72,10 @@ module.exports = (robot) ->
 		url = process.env.HUBOT_BLUERIQ_RUNTIME_URL
 		user = process.env.HUBOT_BLUERIQ_USERNAME
 		pass = process.env.HUBOT_BLUERIQ_PASSWORD
+		shortcut = process.env.HUBOT_BLUERIQ_SHORTCUT
+		
 		auth = 'Basic ' + new Buffer(user + ':' + pass).toString('base64');
-		robot.http(url + "/server/api/v1/dtree/search/coffee")
+		robot.http(url + "/server/api/v1/dtree/search/" + shortcut)
 			.headers('Authorization': auth, 'Accept': 'application/json', 'Content-Type': 'application/json', 'Accept-Language': 'en-GB')
 			.post(data) (err, res, body) ->
 				if err
@@ -88,8 +91,10 @@ module.exports = (robot) ->
 		url = process.env.HUBOT_BLUERIQ_RUNTIME_URL
 		user = process.env.HUBOT_BLUERIQ_USERNAME
 		pass = process.env.HUBOT_BLUERIQ_PASSWORD
+		shortcut = process.env.HUBOT_BLUERIQ_SHORTCUT
+		
 		auth = 'Basic ' + new Buffer(user + ':' + pass).toString('base64');
-		robot.http(url + "/server/api/v1/dtree/execute/coffee/" + treeName)
+		robot.http(url + "/server/api/v1/dtree/execute/" + shortcut + "/" + treeName)
 			.headers('Authorization': auth, 'Accept': 'application/json', 'Content-Type': 'application/json', 'Accept-Language': 'en-GB')
 			.post(data) (err, res, body) ->
 				if err
