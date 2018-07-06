@@ -18,9 +18,11 @@ Restart your robot, and you're good to go.
 Hubot needs to know where the Blueriq Runtime exists so the chat can start. 
 Please set the following variables and (re)start Hubot. 
 
+```bash
 SET HUBOT_BLUERIQ_RUNTIME_URL=http://localhost:8080/Runtime/
 SET HUBOT_BLUERIQ_USERNAME=admin
 SET HUBOT_BLUERIQ_PASSWORD=welcome
+```
 
 # Start chatting
 
