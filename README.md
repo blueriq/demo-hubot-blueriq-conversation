@@ -38,6 +38,20 @@ blueriq.shortcut.coffee.version=0.0-Trunk
 blueriq.shortcut.coffee.securityEnabled=true
 ```
 
+Because we enabled the security, make sure an authentication provider is present. For example:
+
+```
+blueriq.security.auth-providers.local01.type=in-memory
+blueriq.security.auth-providers.local01.users.location=aquima://users.properties
+blueriq.security.auth-providers-chain=local01
+```
+
+In the example above, please add `users.properties` in the `spring.config.additional-location` and add the user:
+
+```
+admin={noop}welcome
+```
+
 1. Say `hi`. Reply: `Hello, how can I help you?`
 2. Say `@<botname> What kind of coffee do I need?`. Reply: `Let me check my questionnaire database...`. The chat with Blueriq starts.
 
