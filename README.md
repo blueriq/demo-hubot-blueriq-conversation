@@ -49,7 +49,7 @@ blueriq.security.auth-providers-chain=local01
 In the example above, please add `users.properties` in the `spring.config.additional-location` and add the user:
 
 ```
-admin={noop}welcome
+admin={noop}welcome,admin
 ```
 
 # Start chatting
